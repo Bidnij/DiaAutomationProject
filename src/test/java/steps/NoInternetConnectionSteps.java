@@ -8,7 +8,7 @@ import static org.testng.Assert.assertTrue;
 
 public class NoInternetConnectionSteps extends DeviceCapabilities {
 
-    NoInternetConnectionPopup noInternetConnectionPopup = new NoInternetConnectionPopup();
+    NoInternetConnectionPopup noInternetConnectionPopup = new NoInternetConnectionPopup(getAppiumDriver());
 
     @Then("I see no internet connection popup")
     public void iSeeNoInternetConnectionPopup(){

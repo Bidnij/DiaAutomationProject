@@ -32,7 +32,7 @@
         <org.apache.commons.lang3.version>3.7</org.apache.commons.lang3.version>
         <org.apache.commons.text.version>1.8</org.apache.commons.text.version>
         <org.apache.commons.io.version>2.6</org.apache.commons.io.version>
-        <io.appium.version>8.3.0</io.appium.version>
+        <io.appium.version>7.4.1</io.appium.version>
         <jedis.version>3.1.0</jedis.version>
         <applitools.version>3.208.0</applitools.version>
         <google.api.services.gmail.version>v1-rev20200720-1.30.10</google.api.services.gmail.version>

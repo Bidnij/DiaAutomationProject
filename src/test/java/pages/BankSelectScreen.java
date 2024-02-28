@@ -1,16 +1,21 @@
 package pages;
 
-import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import lombok.SneakyThrows;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-
-import java.util.HashMap;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BankSelectScreen extends  BaseAction{
 
-   private WebElement selectBankScreenTitle = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Оберіть свій банк']"));
+//   private WebElement selectBankScreenTitle = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Оберіть свій банк']"));
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Оберіть свій банк']")
+    private WebElement selectBankScreenTitle;
+
+    public BankSelectScreen(final AppiumDriver<?> driver) {
+        super(driver);
+    }
 
     @SneakyThrows
     public boolean isSelectBankScreen() {

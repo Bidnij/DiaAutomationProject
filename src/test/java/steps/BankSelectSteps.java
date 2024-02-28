@@ -10,7 +10,11 @@ import static org.testng.Assert.assertTrue;
 
 public class BankSelectSteps extends DeviceCapabilities {
 
-    BankSelectScreen bankSelectScreen = new BankSelectScreen();
+    private final BankSelectScreen bankSelectScreen;
+
+    public BankSelectSteps() {
+        bankSelectScreen = new BankSelectScreen(getAppiumDriver());
+    }
 
     @Then("I see bank select screen")
     public void iSeeLandingScreen(){
