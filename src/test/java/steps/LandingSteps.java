@@ -11,7 +11,11 @@ import static org.testng.Assert.assertTrue;
 
 public class LandingSteps extends DeviceCapabilities {
 
-    LandingScreen landingScreen = new LandingScreen(getAppiumDriver());
+    private final LandingScreen landingScreen;
+
+    LandingSteps() {
+        landingScreen = new LandingScreen(getAppiumDriver());
+    }
 
     @Given("I see landing screen")
     public void iSeeLandingScreen(){
